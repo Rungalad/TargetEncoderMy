@@ -46,4 +46,4 @@ class TGE:
 
 e = TGE(fluctuate=0.1)
 cat_cols = [i for i in X_train.columns if X_train[i].dtypes == 'object']
-cat_feats = e.fit_transform(X_train[cat_cols], y_train)
+X_train_cat_mod = e.fit_transform(X_train[cat_cols], y_train)
